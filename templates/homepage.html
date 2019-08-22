@@ -1,0 +1,25 @@
+<html>
+<head></head>
+<body>
+some html here
+<br>
+
+<form action="{% url 'count' %}">
+<!--    {% csrf_token %}-->
+
+	<textarea cols="40" rows="5" name="textAreaNameAttribute"></textarea><br>
+    <input type="submit" value="count" /><br>
+
+</form>
+
+<form action="{% url 'about' %} ">
+
+
+
+    <textarea cols="10" rows="5" name="aboutName"></textarea>
+    <input type="submit" value="GOTO about"><br>
+</form>
+
+
+</body>
+</html>
